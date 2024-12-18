@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria do Derik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Pizzaria do Derik</h1>
+        <p>As melhores pizzas da cidade!</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção do Menu -->
+    <section id="menu">
+        <h2>Nosso Menu</h2>
+        <ul>
+            <li>Pizza de Calabresa - <strong>R$ 35,00</strong></li>
+            <li>Pizza Portuguesa - <strong>R$ 40,00</strong></li>
+            <li>Pizza Marguerita - <strong>R$ 38,00</strong></li>
+            <li>Pizza Quatro Queijos - <strong>R$ 45,00</strong></li>
+        </ul>
+    </section>
+
+    <!-- Seção Galeria de Imagens -->
+    <section id="galeria">
+        <h2>Galeria de Pizzas</h2>
+        <div class="imagem">
+            <img src="pizza1.jpg" alt="Pizza Calabresa">
+            <p>Pizza Calabresa</p>
+        </div>
+        <div class="imagem">
+            <img src="pizza2.jpg" alt="Pizza Portuguesa">
+            <p>Pizza Portuguesa</p>
+        </div>
+        <div class="imagem">
+            <img src="pizza3.jpg" alt="Pizza Marguerita">
+            <p>Pizza Marguerita</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>📞 Telefone: (19)9978040788</p>
+        <p>💬 WhatsApp: (19)9978040788</p>
+        <a href="https://api.whatsapp.com/send?phone=55199978040788&text=Olá!%20Quero%20fazer%20um%20pedido%20na%20Pizzaria%20do%20Derik"
+            target="_blank" id="btn-whatsapp">
+            🟢 Pedir pelo WhatsApp
+        </a>
+
+        <p>📍 Endereço: Rua das Pizzas, 123 - São José do Rio Pardo</p>
+
+        <!-- Formulário de Contato -->
+        <form action="enviar_contato.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Pizzaria do Derik. Todos os direitos reservados.</p>
+        <p>Siga-nos nas redes sociais:</p>
+        <p>
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
